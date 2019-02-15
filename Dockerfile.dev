@@ -1,4 +1,4 @@
-FROM nexus.giffgaff.co.uk/php72-fpm:latest
+FROM vesica/php72-fpm:latest
 
 # Make production ready
 RUN mv "$PHP_INI_DIR/php.ini-development" "$PHP_INI_DIR/php.ini"
