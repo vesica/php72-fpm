@@ -1,4 +1,7 @@
 FROM vesica/php72-fpm:latest
 
+ENV PROVISION_CONTEXT "development"
+RUN pecl install xdebug && docker-php-ext-enable xdebug
+
 # Make production ready
 RUN mv "$PHP_INI_DIR/php.ini-development" "$PHP_INI_DIR/php.ini"
