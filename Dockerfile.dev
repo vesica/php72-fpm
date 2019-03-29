@@ -6,7 +6,7 @@ ENV PROVISION_CONTEXT "development"
 RUN pecl install xdebug && docker-php-ext-enable xdebug
 
 # Add Development PHP.ini
-Enabled xdebug and disable opcache in dev tag
+# Enabled xdebug and disable opcache in dev tag
 RUN mv "$PHP_INI_DIR/php.ini-development" "$PHP_INI_DIR/php.ini"
 COPY etc/php/development.ini /usr/local/etc/php/conf.d/development.ini
 
