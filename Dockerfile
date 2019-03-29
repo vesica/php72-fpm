@@ -43,3 +43,4 @@ RUN echo "<?php echo phpinfo(); ?>" > /var/www/html/phpinfo.php
 
 # Make production ready
 RUN mv "$PHP_INI_DIR/php.ini-production" "$PHP_INI_DIR/php.ini"
+COPY etc/php/production.ini /usr/local/etc/php/conf.d/production.ini
