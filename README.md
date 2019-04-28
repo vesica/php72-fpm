@@ -17,12 +17,12 @@ FPM is exposed on Port 9000.
 For production use, without XDebug:
 
 ```
-docker run -d -p 9000:9000 -it --name=php vesica/php72-fpm:latest
+docker run -d -p 9000:9000 -it --name=php quay.io/vesica/php72-fpm:latest
 ```
 
 or with XDebug:
 ```
-docker run -d -p 9000:9000 -it --name=php vesica/php72-fpm:dev
+docker run -d -p 9000:9000 -it --name=php quay.io/vesica/php72-fpm:dev
 ```
 
 ## Build to use as a development environment (i.e., with XDebug):
@@ -39,7 +39,7 @@ docker run -d -p 9000:9000 -it --name=php php72-fpm
 
 
 ## Publish Images
-Docker images are automatically published to vesica/php72-fpm:latest and vesica/php72-fpm:dev.
+Docker images are automatically published to quay.io/vesica/php72-fpm:latest and quay.io/vesica/php72-fpm:dev.
 
 
 ## Important Information:
