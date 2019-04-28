@@ -2,7 +2,7 @@ version: 2.1
 executors:
   docker-publisher:
     environment:
-      IMAGE_NAME: vesica/php72-fpm
+      IMAGE_NAME: quay.io/vesica/php72-fpm
     docker:
       - image: circleci/buildpack-deps:stretch
 jobs:
